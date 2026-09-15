@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es" data-tema="claro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estudio — Clavecode</title>
+<meta name="description" content="Plataforma personal de estudio: ingeniería en IA, arquitectura de software, infraestructura, paid media, lógica de programación e inglés.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<button class="abrir-lateral" id="abrir-lateral" aria-label="Abrir menú">☰</button>
+
+<div class="capa">
+  <aside class="lateral" id="lateral"></aside>
+  <main class="principal">
+    <div class="contenedor" id="vista">
+      <div class="vacio"><div class="ic">⏳</div><p>Cargando…</p></div>
+    </div>
+  </main>
+</div>
+
+<div class="pomo" id="pomo"></div>
+
+<!-- 1. núcleo: namespace + carga de contenido -->
+<script src="assets/nucleo.js"></script>
+<script src="assets/iconos.js"></script>
+<!-- 2. estado y motores -->
+<script src="assets/store.js"></script>
+<script src="assets/pomodoro.js"></script>
+<script src="assets/audio.js"></script>
+<script src="assets/quiz.js"></script>
+<script src="assets/ingles.js"></script>
+<!-- 3. catálogo de fuentes + qué tracks existen (agregá acá los nuevos) -->
+<script src="contenido/_fuentes.js"></script>
+<script src="contenido/_registro.js"></script>
+<!-- 4. pantallas y router -->
+<script src="assets/vistas.js"></script>
+<script src="assets/app.js"></script>
+
+</body>
+</html>
